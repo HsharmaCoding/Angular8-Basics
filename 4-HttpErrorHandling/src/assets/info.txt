@@ -1,0 +1,25 @@
+1. Generate employee-list and employee-detail component.
+2. Both component are sharing the same data but differently.
+3. Common services will be created which has the common method to consume in component using dependency injection.
+4. Command : ng g s employee (To generate service file)
+5. After defining service class we have to define/register the created services in provider metadata (app.module.ts).
+6. Services will fetch/get the data using http and observables.
+7. Observable is nothing but the HTTP Response which arrives asynchroniously from server/db.
+8. RxJs : Reactive extension for javascript.
+          External library to work with Observable.
+          It's not related to React library from facebook. It is just an external library to work with observable in angular.
+9. TO make use of http services import HttpClientModule in app.module.ts. We have to explisitly register httpmodule in import section.
+10. Import HttpClient in services class to make http call.
+11. We need URL in service to call API, but we don't have any API and server now so for our example we will fetch data from a file which we assume as a web server.
+12. Create Json file employees.json in asset/data folder with data. 
+13. Create IEmployee interface to map/casting the data which we recived through observable.
+14. Perform error handling with observable.
+    a) Import below stuffs in service class to handle the exceptions.
+        import { catchError, } from 'rxjs/operators';
+        import { throwError } from 'rxjs';
+        import { finalize } from 'rxjs/operators';
+    Note : error handling using rxjs may differ with the different versions for RxJs.
+
+
+
+

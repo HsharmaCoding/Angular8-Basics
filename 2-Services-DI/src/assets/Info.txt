@@ -1,0 +1,7 @@
+1. Generate employee-list and employee-detail component.
+2. Both component are sharing the same data but differently.
+3. Common services will be created which has the common method to consume in component using dependency injection.
+4. Command : ng g s employee (To generate service file)
+5. After defining service class we have to define/register the created services in provider metadata (app.module.ts).
+
+

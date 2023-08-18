@@ -1,0 +1,20 @@
+1. Include the base tag - <base href="/"> in index.html.
+2. Default Routing file - app-routing.module.ts will be using to mange application routes.
+3. By Default Routing is already imported in app.module.ts file to use routing.
+4. Generate compomemt ng g c department-list -it -is 
+    > -it means inline template.
+    > -is inline style.
+5. Generate compomemt ng g c employee -it -is.
+6. Confiure the Routes in  app-routing.module.ts
+7. Import compomemt using constant object to ignore the duplicate code.
+    > Constant can be created on app-routing.module.ts file and then we can import it in app.module.ts file.
+    > refference - import { AppRoutingModule,routingComponents } from './app-routing.module'; (app.module.ts)
+8. Create css in styles.css file.
+9. Create two buttons to route on specific compomemt (Departments and Employees).
+
+
+
+
+
+
+

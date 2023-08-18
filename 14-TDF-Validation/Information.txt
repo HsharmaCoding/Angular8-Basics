@@ -1,0 +1,63 @@
+1. Template Driven Form (TDF)
+    > All the contentt will be in html file.
+    > It is just similar what we use in AngulareJS
+    > Depends on propject requirement we can choose the approach.
+    > Here we will perform following items:
+        > Data binding
+        > Track state and validity
+        > Display error message
+        > Posting data to server 
+        > etc.
+
+2. Add bootsrtap css in the project.
+    > Go to the bootsrtap website and copy the bootsrtap cdn (https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+    > Add bootsrtap CDN in index.html file.
+
+3. Create Simple HTML Form with controls.
+4. import { FormsModule } from '@angular/forms'; in app.modele.ts
+    > Also add FormsModule in imports array in same file.
+5. Declare the form with template refference valriable to make it angular form. <form #userForm="ngForm">
+    > Apply noModel in html control to make two way binding.
+    > all control should have the name property.
+    > Create form group using ngModelGroup
+        > By that form will be showing in group. Single objec > another single object within parent object.
+6. Bind Form Data To a Model.
+    > Bind data to the user defined model then send that data to the server. (Bind)
+
+7. Track Control State and validity
+
+    State                                       Class if true               class if false
+    ---------------------------------------------------------------------------------------------
+    The control has been visited                ng-touched                  ng-untouched
+    The control's value has been changed.       ng-dirty                    ng-pristine
+        Ex: If the value is changes then class
+            applied from perstine to dirty.
+    The control's value is valid.               ng-valid                    ng-invalid
+        Ex: If control has required validation
+             but the value is not there then it
+             will apply the ng-invalid class.
+
+    > Observe the form state by simply assigning the template referrence variable #name
+    > Observe the form state by #nme="ngModel" and {{name.{Property name eg. touced, valid}}}
+
+8. Form level validation and and enable/disable submit button.
+9. Apply bootsrtap claseed to display redborder and other validation example : class.is-invalid
+10. Make onSubmit event to submit the date and observe the submitted object on console.
+    > Create enrollment service to post the data. we will inject that service in our comnponent to make post call.
+    > Now we don't have API. we will create blue print to make API call from service.
+    > Whenever we have API url then just need to replace the url then code will be working.
+    > Command : ng g s enrollment  to generate service.
+
+
+
+
+
+
+
+
+
+
+    
+
+
+

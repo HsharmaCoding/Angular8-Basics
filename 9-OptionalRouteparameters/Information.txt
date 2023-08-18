@@ -1,0 +1,56 @@
+1. Include the base tag - <base href="/"> in index.html.
+2. Default Routing file - app-routing.module.ts will be using to mange application routes.
+3. By Default Routing is already imported in app.module.ts file to use routing.
+4. Generate compomemt ng g c department-list -it -is 
+    > -it means inline template.
+    > -is inline style.
+5. Generate compomemt ng g c employee -it -is.
+6. Confiure the Routes in  app-routing.module.ts
+7. Import compomemt using constant object to ignore the duplicate code.
+    > Constant can be created on app-routing.module.ts file and then we can import it in app.module.ts file.
+    > refference - import { AppRoutingModule,routingComponents } from './app-routing.module'; (app.module.ts)
+8. Create css in styles.css file.
+9. Create two buttons to route on specific compomemt (Departments and Employees).
+10. If user tries to redirect to the url which is not configured then it will throws error.
+11. Use wild card route to redirect user to the page not found page when page is not available.
+    > Create component : ng g c page-not-found -it -is
+    > Wild card ROUTE should be end of all the route because system tries to find the route from very first confiured route.
+12. When application RUN we need to set default ROUTE to show as a Landing page of application.
+12 ROUTE Parameters:
+    > Pass parameter from button (Parameter will be showing in URL)
+    > Read passed parameter in code.
+    > update department-list compomemt to show some list of data with button to test parameters.
+        > On clicking on button browser URL should be updated.
+        > Generate component :  ng g c department-detail -it -is
+            > It will be dsiplayed when user click on button from the list with parameter value.
+            > We will use snapshot to read the activated url parameter.
+            > Snapshot apprach has one drowback. It can not observe the updated parameter from URL everytime. So for that we have to use paramMap-Observable.
+13. Optional Route Parameter to redirect from back button (department detail page) to department list page
+
+
+
+
+
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

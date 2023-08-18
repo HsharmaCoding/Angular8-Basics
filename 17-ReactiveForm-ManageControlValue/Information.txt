@@ -1,0 +1,22 @@
+1. Create Registration Form (Simple HTML Bootsrtap Form)
+2. Import ReactiveFormsModule in app.module.ts file.
+3. Create registrationForm=new FormGroup in app.component.ts to define the form control fields.
+    > Make sure it should import import {ReactiveFormsModule} from '@angular/forms';
+4. Associate the reactive from module : registrationForm with html form.
+    >  <form [formGroup]="registrationForm">
+    > Each Control will use formControlName directive to define the name of control.
+        > formControlName will have the same name which we define in [registrationForm=new FormGroup]  for each property.
+
+5. Nesting FormGroup
+    > Create grouping of form control (Group : address) [City, State, Postal Code]
+    > To use the grouping have to define dev tag with <div formGroupName="address">
+
+6. Manage Form Control Value using Set Value and Patch Value
+    > setValue Method
+        > It's very strict to maintaining the structure of form group.
+        > If we set the values then we have to set the value of all the control including address groups control.
+        > We can not leave other fields without setting the values otherwise it will throw error in console.
+    > patchValue Method
+        > Using patch value we can set the values of control as per our choice. We can leave other fields blank and it will be working.
+
+
