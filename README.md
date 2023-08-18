@@ -1,5 +1,5 @@
-# Angular8-Basics
-Abgular8 projects range from the basics to the advanced level
+# Angular8-Basics <br>
+Abgular8 projects range from the basics to the advanced level <br>
 1-BasicTutorial
 2-Services-DI
 3-HttpAndObservable
